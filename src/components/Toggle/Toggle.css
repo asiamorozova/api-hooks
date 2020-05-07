@@ -22,7 +22,7 @@
 
         background-color: whitesmoke;
         transition: 0.2s;
-        
+
     }
 
     input:checked + label { 
