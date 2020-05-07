@@ -23,9 +23,11 @@ TrueFalseProvider.propTypes = {
 };
 
 export const useTrueFalse = () => {
-  const trueFalse = useContext(TrueFalseContext);
+  const { trueFalse } = useContext(TrueFalseContext);
   return trueFalse;
 };
+
+
 
 //1) provides state for profanity checked true or false 
 //2) provides a way to change the checked state aka toggle switch 

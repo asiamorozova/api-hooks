@@ -1,0 +1,35 @@
+.Toggle {
+    input {
+        display: none; 
+
+    }
+
+    label{
+        display: block;
+        width: 3rem;
+        border-radius: 1rem;
+        border: 1px solid blanchedalmond;
+
+
+        background-color: slategray;
+    }
+    label::before {
+        display: block;
+        width: 3rem;
+        border-radius: 1rem;
+        border: 1px solid black;
+
+
+        background-color: whitesmoke;
+        transition: 0.2s;
+        
+    }
+
+    input:checked + label { 
+        background-color: crimson;
+
+        &::before {
+            margin: 1rem;
+        }
+    }
+}

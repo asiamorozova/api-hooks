@@ -1,11 +1,13 @@
 import React from 'react';
-import trueFalseProvider from '../../hooks/trueFalseProvider';
+import { TrueFalseProvider } from '../../hooks/TrueFalseProvider';
+import Toggle from '../Toggle/Toggle';
 
 
 export default function App() {
   return (
     <>
-      <trueFalseProvider/>
+      <TrueFalseProvider/>
+      <Toggle/>
     </>
   );
 }
