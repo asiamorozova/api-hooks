@@ -3,7 +3,8 @@ export const tpQuotes = () => {
     .then(res => res.json())
     .then(res => res.results.map(quotes =>({
       id: quotes.id,
-      quoteText: quotes.quoteText,
+      quoteTextOnly: quotes.quoteTextOnly,
+      persons: quotes.persons,
       profanity: quotes.profanity
     })));
 };
