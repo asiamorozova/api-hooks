@@ -7,7 +7,7 @@ import styleDark from '../Quotes/Light.css';
 
 
 const Quotes = ({ quotes }) => {
-  const quotesAttributes = quotes.map(quote =>(
+  const quotes = quotes.map(quote =>(
     <li key={quotes.id}>
       <Quote{...quote}/>
     </li>
