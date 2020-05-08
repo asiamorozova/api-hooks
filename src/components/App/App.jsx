@@ -1,14 +1,15 @@
 import React from 'react';
-import { TrueFalseProvider } from '../../hooks/TrueFalseProvider';
+import { ModeProvider } from '../../hooks/ModesProvider';
 import Toggle from '../Toggle/Toggle';
+//import Quote from '../Quotes/tpQuote';
 
 
 export default function App() {
   return (
     <>
-      <TrueFalseProvider/>
-      <Toggle/>
+      <ModeProvider>
+        <Toggle/>
+      </ModeProvider>
     </>
   );
 }
-//something is wrong with lab 
