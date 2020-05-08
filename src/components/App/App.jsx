@@ -1,14 +1,17 @@
 import React from 'react';
-import { TrueFalseProvider } from '../../hooks/TrueFalseProvider';
-import Toggle from '../Toggle/Toggle';
+import { ModeProvider } from '../../hooks/ModesProvider';
+//import Toggle from '../Toggle/Toggle';
+import Header from '../Header/Header';
+//import Quote from '../Quotes/tpQuote';
 
 
 export default function App() {
   return (
     <>
-      <TrueFalseProvider/>
-      <Toggle/>
+      <ModeProvider>
+        <Header/>
+        
+      </ModeProvider>
     </>
   );
 }
-  

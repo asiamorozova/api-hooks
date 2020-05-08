@@ -1,0 +1,25 @@
+.QuotesList {
+    background-color: whitesmoke;
+
+}
+p {
+    color: grey;
+
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+li{ 
+    display: inline-block;
+    width: 440px;
+    border: dotted 3px black;
+    margin: 25px;
+    font-size: 16px;
+    border-radius: 9px;
+}
+
+li:hover{
+    transform: translate3d(-3px, -3px, 0);
+}
